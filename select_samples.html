@@ -3,13 +3,148 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Custom Select Samples</title>
-    <link href="css/select2.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
-    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/select2.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script src="js/select2.full.js"></script>
+    <script src="js/jquery.browser.min.js"></script>
+    <script src="js/misc.js"></script>
 </head>
 <body>
+    <section class="main-box">
+        <div class="select2-box-form-samples">
 
+            <h4 class="example-hd">size: 20-27</h4>
+
+            <div class="form-it-col fl-left">
+
+                <div class="form-it">
+                    <label class="form-it-label-box">
+                        <span class="form-it-label">start</span>
+                        <select class="select2-trigger" data-addclass="select2-box">
+                            <option value="0">&nbsp;</option>
+                            <option value="1">Paris</option>
+                            <option value="2" data-option-state="state-green">Moscow</option>
+                            <option value="3">San Francisco</option>
+                        </select>
+                        <span class="clearfix"></span>
+                    </label>
+                </div>
+
+                <div class="form-it">
+                    <label class="form-it-label-box">
+                        <span class="form-it-label">hover</span>
+                        <select class="select2-trigger" data-addclass="select2-box">
+                            <option value="0">&nbsp;</option>
+                            <option value="1">Paris</option>
+                            <option value="2" data-option-state="state-green">Moscow</option>
+                            <option value="3">San Francisco</option>
+                        </select>
+                        <span class="clearfix"></span>
+                    </label>
+                </div>
+
+                <div class="form-it">
+                    <label class="form-it-label-box">
+                        <span class="form-it-label">pressed</span>
+                        <select class="select2-trigger" data-addclass="select2-box">
+                            <option value="0">&nbsp;</option>
+                            <option value="1">Paris</option>
+                            <option value="2" data-option-state="state-green">Moscow</option>
+                            <option value="3">San Francisco</option>
+                        </select>
+                        <span class="clearfix"></span>
+                    </label>
+                </div>
+
+                <div class="form-it">
+                    <label class="form-it-label-box">
+                        <span class="form-it-label">selected</span>
+                        <select class="select2-trigger" data-addclass="select2-box">
+                            <option value="0">&nbsp;</option>
+                            <option value="1">Paris</option>
+                            <option value="2" data-option-state="state-green">Moscow</option>
+                            <option value="3" selected>San Francisco</option>
+                        </select>
+                        <span class="clearfix"></span>
+                    </label>
+                </div>
+
+                <div class="form-it">
+                    <label class="form-it-label-box">
+                        <span class="form-it-label">right</span>
+                        <select class="select2-trigger" data-addclass="select2-box select2-box-valid">
+                            <option value="0">&nbsp;</option>
+                            <option value="1">Paris</option>
+                            <option value="2" data-option-state="state-green">Moscow</option>
+                            <option value="3" selected>San Francisco</option>
+                        </select>
+                        <span class="clearfix"></span>
+                    </label>
+                </div>
+
+                <div class="form-it">
+                    <label class="form-it-label-box">
+                        <span class="form-it-label">wrong</span>
+                        <select class="select2-trigger" data-addclass="select2-box select2-box-error">
+                            <option value="0">&nbsp;</option>
+                            <option value="1">Paris</option>
+                            <option value="2" data-option-state="state-green">Moscow</option>
+                            <option value="3" selected>San Francisco</option>
+                        </select>
+                        <span class="clearfix"></span>
+                    </label>
+                </div>
+
+                <div class="form-it">
+                    <label class="form-it-label-box">
+                        <span class="form-it-label">wrong hover</span>
+                        <select class="select2-trigger" data-addclass="select2-box select2-box-error">
+                            <option value="0">&nbsp;</option>
+                            <option value="1">Paris</option>
+                            <option value="2" data-option-state="state-green">Moscow</option>
+                            <option value="3" selected>San Francisco</option>
+                        </select>
+                        <span class="clearfix"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-it-col fl-left">
+                <div class="form-it">
+                    <label class="form-it-label-box">
+                        <span class="form-it-label">droplist</span>
+                        <select class="select2-trigger" data-addclass="select2-box">
+                            <option value="0">&nbsp;</option>
+                            <option value="1">Paris</option>
+                            <option value="2" data-option-state="state-green">Moscow</option>
+                            <option value="3" selected>San Francisco</option>
+                        </select>
+                        <span class="clearfix"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+        </div>
+
+        <div class="select2-box-text-samples">
+            <h4 class="example-hd">example</h4>
+            <p class="example-text">They formed the band Wilson Philips (with the daughter of&nbsp;Michelle Philips of&nbsp;the Mamas and Papas)
+                and their first album was a&nbsp;worldwide hit. Today they are both married and live in
+                <select class="select2-trigger" data-addclass="select2-box">
+                    <option value="0">&nbsp;</option>
+                    <option value="1">Paris</option>
+                    <option value="2" data-option-state="state-green">Moscow</option>
+                    <option value="3" selected>San Francisco</option>
+                </select>. I&nbsp;always thought Carnie was really cool. Especially when she was a&nbsp;teenager and had bright red
+                spiky hair. But, like most older sisters, she wasn&rsquo;t at&nbsp;all interested in&nbsp;her younger
+                sister. I&nbsp;<strong>desperately</strong> wanted to&nbsp;be&nbsp;with her and her friends, and sometimes&nbsp;I used to&nbsp;follow
+                them, but she hated&nbsp;that.</p>
+        </div>
+
+    </section>
 </body>
 </html>

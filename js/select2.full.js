@@ -871,9 +871,8 @@ S2.define('select2/results',[
 
   Results.prototype.option = function (data) {
     var option = document.createElement('li');
-      var option_element = $(data.element);
+    var option_element = $(data.element);
     option.className = 'select2-results__option';
-      //console.log($(data.element).data('optionclass'));
 
     var attrs = {
       'role': 'treeitem',
@@ -881,9 +880,6 @@ S2.define('select2/results',[
         'data-state': ''
     };
 
-      //if (data.state-green) {
-      //    console.log('data-state detected')
-      //}
     if (data.disabled) {
       delete attrs['aria-selected'];
       attrs['aria-disabled'] = 'true';
@@ -906,10 +902,9 @@ S2.define('select2/results',[
       attrs['aria-label'] = data.text;
       delete attrs['aria-selected'];
     }
-      if (option_element.data('optionclass')) {
 
-          attrs['data-state'] = option_element.data('optionclass');
-
+    if (option_element.data('option-state')) {
+      attrs['data-state'] = option_element.data('option-state');
     }
 
     for (var attr in attrs) {
